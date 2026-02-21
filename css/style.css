@@ -159,7 +159,10 @@ a:hover {
 }
 
 .bg-1 {
-  background: url(../images/background/promo-video-back.jpg) fixed no-repeat;
+  
+    background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../images/background/video-fondo.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
@@ -712,6 +715,7 @@ button:focus,
 
 .call-to-action-app {
   text-align: center;
+    display: none;
 }
 
 .call-to-action-app h2,
@@ -2205,4 +2209,39 @@ hr {
   }
 }
 
+
+
 /*# sourceMappingURL=style.css.map */
+
+.promo-overlay {
+	background: rgba(0, 0, 0, 0.65); /* fondo oscuro semitransparente */
+	padding: 50px 40px;
+	border-radius: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	backdrop-filter: blur(6px); /* efecto vidrio moderno */
+	-webkit-backdrop-filter: blur(6px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.promo-overlay h2 {
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.promo-overlay p {
+	color: #e0e0e0;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.promo-overlay .video {
+	font-size: 40px;
+	color: #ffffff;
+	transition: 0.3s ease;
+}
+
+.promo-overlay .video:hover {
+	transform: scale(1.15);
+}
