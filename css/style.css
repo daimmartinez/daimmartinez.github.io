@@ -764,6 +764,7 @@ button:focus,
 }
 
 .cta-community {
+  display: none;
   margin-bottom: 50px;
   padding: 40px 100px;
 }
@@ -1440,6 +1441,7 @@ hr {
 
 .featured-article {
   padding: 0 0 50px 0;
+  display: none;
 }
 
 .featured-article article.featured {
