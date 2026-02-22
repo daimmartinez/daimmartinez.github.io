@@ -43,7 +43,12 @@ FACEBOOK: https://www.facebook.com/themefisher
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+  <script type="text/javascript">
+    emailjs.init('IFWfqXi78zU_0BFPx')
+  </script>
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
@@ -189,7 +194,8 @@ FACEBOOK: https://www.facebook.com/themefisher
 			</div>
 			<div class="col-12">
 				<form action="https://formspree.io/f/xzdajjrd"
-        method="POST">
+        method="POST"
+        id="form">
 					<div class="row">
 						<!-- Name -->
 						<div class="col-md-6 mb-2">
@@ -197,19 +203,19 @@ FACEBOOK: https://www.facebook.com/themefisher
 						</div>
 						<!-- Email -->
 						<div class="col-md-6 mb-2">
-							<input class="form-control main" type="email" name="email" placeholder="Correo electrónico" required>
+							<input class="form-control main" type="email" name="email" id="email" placeholder="Correo electrónico" required>
 						</div>
 						<!-- subject -->
 						<div class="col-md-12 mb-2">
-							<input class="form-control main" type="text" name="subject" placeholder="Asunto" required>
+							<input class="form-control main" type="text" name="title" id="title" placeholder="Asunto" required>
 						</div>
 						<!-- Message -->
 						<div class="col-md-12 mb-2">
-							<textarea class="form-control main" name="message" rows="10" placeholder="Mensaje"></textarea>
+							<textarea class="form-control main" name="message" id="message" rows="10" placeholder="Mensaje"></textarea>
 						</div>
 						<!-- Submit Button -->
 						<div class="col-12 text-right">
-							<button class="btn btn-main-md" type="submit">Enviar</button>
+							<button class="btn btn-main-md" type="submit" id="button">Enviar</button>
 						</div>
 					</div>
 				</form>
