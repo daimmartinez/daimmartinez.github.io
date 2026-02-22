@@ -146,30 +146,33 @@ FACEBOOK: https://www.facebook.com/themefisher
 
         <form id="form">
           <div class="field">
-            <label for="name">Nombre completo</label>
-            <input class="form-control main" type="text" name="name" id="name">
+            <label for="name">Nombre completo</label><span class="text-danger">*</span>
+            <input class="form-control main" type="text" name="name" id="name" required>
           </div>
           <div class="field">
-            <label for="email">Correo electrónico</label>
-            <input class="form-control main" type="email" name="email" id="email">
+            <label for="email">Correo electrónico</label><span class="text-danger">*</span>
+            <input class="form-control main" type="email" name="email" id="email" required>
           </div>
           <div class="field">
             <label for="tel">Número telefónico</label>
             <input class="form-control main" type="tel" name="tel" id="tel" inputmode="numeric" pattern="[0-9]*" placeholder="Ej. 6641234567">
           </div>
           <div class="field">
-            <label for="company">Compañía</label>
-            <input class="form-control main" type="text" name="company" id="company">
+            <label for="company">Compañía</label><span class="text-danger">*</span>
+            <input class="form-control main" type="text" name="company" id="company" required>
           </div>
           <div class="field">
-            <label for="title">Asunto</label>
-            <input type="text" class="form-control main" name="title" id="title">
+            <label for="title">Asunto</label><span class="text-danger">*</span>
+            <input type="text" class="form-control main" name="title" id="title" required>
           </div>
           <div class="field">
-            <label for="message">Mensaje</label>
-            <textarea class="form-control main" name="message" id="message" rows="4"></textarea>
+            <label for="message">Mensaje</label><span class="text-danger">*</span>
+            <textarea class="form-control main" name="message" id="message" rows="4" required></textarea>
+            
+            <span class="text-danger">* Campos obligatorios</span>
+        
           </div>
-
+            <br>
 
           <input type="submit"  class="btn btn-main-md" id="button" value="Enviar email" >
           <br>
