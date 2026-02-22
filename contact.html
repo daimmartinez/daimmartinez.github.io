@@ -45,12 +45,6 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link href="css/style.css" rel="stylesheet">
 
 
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-      emailjs.init('IFWfqXi78zU_0BFPx')
-    </script>
 
 </head>
 
@@ -128,61 +122,145 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 
 <!--====  End of Address and Map  ====-->
-<section class="contact-form section mx-auto">
-	<div class="container shadow-lg border-0 rounded-4">
-		<div class="card-body p-5">
-        <section class="section page-title">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 m-auto">
-                <!-- Page Title -->
-                <h1>Contáctanos</h1>
-                <!-- Page Description -->
-                <p>Para asegurar que tu siguiente proyecto empresarial se cumpla, contáctanos y platícanos tu oportunidad de mejora.</p>
-              </div>
+<section class="contact-form section py-5">
+  <div class="container">
+    <div class="card shadow-lg border-0 rounded-4">
+      <div class="card-body p-5">
+
+        <!-- Título -->
+        <div class="text-center mb-4">
+          <h1 class="fw-bold">Contáctanos</h1>
+          <p class="text-muted">
+            Para asegurar que tu siguiente proyecto empresarial se cumpla,
+            contáctanos y platícanos tu oportunidad de mejora.
+          </p>
+        </div>
+
+        <!-- Formulario Zoho -->
+        <form 
+              name="form"
+              id="form"
+              method="POST"
+              accept-charset="UTF-8"
+              enctype="multipart/form-data">
+
+          <!-- Hidden Fields -->
+          <input type="hidden" name="zf_referrer_name" value="">
+          <input type="hidden" name="zf_redirect_url" value="iiccalmecac.com/index.html">
+          <input type="hidden" name="zc_gad" value="">
+
+          <div class="row g-3">
+
+            <!-- Nombre(s) -->
+            <div class="col-md-6">
+              <label class="form-label">
+                Nombre(s) <span class="text-danger">*</span>
+              </label>
+              <input type="text" class="form-control"
+                     name="Name_First" maxlength="255" fieldType="7" required>
             </div>
-          </div>
-        </section>
-			<div class="col-12">
 
-        <form id="form">
-          <div class="field">
-            <label for="name">Nombre completo</label><span class="text-danger">*</span>
-            <input class="form-control main" type="text" name="name" id="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Correo electrónico</label><span class="text-danger">*</span>
-            <input class="form-control main" type="email" name="email" id="email" required>
-          </div>
-          <div class="field">
-            <label for="tel">Número telefónico</label>
-            <input class="form-control main" type="tel" name="tel" id="tel" inputmode="numeric" pattern="[0-9]*" placeholder="Ej. 6641234567">
-          </div>
-          <div class="field">
-            <label for="company">Compañía</label><span class="text-danger">*</span>
-            <input class="form-control main" type="text" name="company" id="company" required>
-          </div>
-          <div class="field">
-            <label for="title">Asunto</label><span class="text-danger">*</span>
-            <input type="text" class="form-control main" name="title" id="title" required>
-          </div>
-          <div class="field">
-            <label for="message">Mensaje</label><span class="text-danger">*</span>
-            <textarea class="form-control main" name="message" id="message" rows="4" required></textarea>
-            
-            <span class="text-danger">* Campos obligatorios</span>
-        
-          </div>
-            <br>
+            <!-- Apellido(s) -->
+            <div class="col-md-6">
+              <label class="form-label">
+                Apellido(s) <span class="text-danger">*</span>
+              </label>
+              <input type="text" class="form-control"
+                     name="Name_Last" maxlength="255" fieldType="7" required>
+            </div>
 
-          <input type="submit"  class="btn btn-main-md" id="button" value="Enviar email" >
-          <br>
+            <!-- Email -->
+            <div class="col-md-6">
+              <label class="form-label">
+                Correo electrónico <span class="text-danger">*</span>
+              </label>
+              <input type="email" class="form-control"
+                     name="Email" maxlength="255" fieldType="9" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="col-md-6">
+              <label class="form-label">
+                Número telefónico
+              </label>
+              <input type="text"
+                     class="form-control"
+                     compname="PhoneNumber"
+                     name="PhoneNumber_countrycode"
+                     phoneFormat="1"
+                     isCountryCodeEnabled="false"
+                     maxlength="20"
+                     fieldType="11"
+                     id="international_PhoneNumber_countrycode"
+                     placeholder="Ej. 6641234567">
+              <div class="form-text">
+                También podemos dar seguimiento vía WhatsApp.
+              </div><br>
+            </div>
+
+            <!-- Nombre compañía -->
+            <div class="col-md-6">
+              <label class="form-label">
+                Nombre de la compañía <span class="text-danger">*</span>
+              </label>
+              <input type="text" class="form-control"
+                     name="Address_AddressLine1" maxlength="255" required>
+            </div>
+
+            <!-- Ciudad -->
+            <div class="col-md-3">
+              <label class="form-label">Ciudad <span class="text-danger">*</span></label>
+              <input type="text" class="form-control"
+                     name="Address_City" maxlength="255" required>
+            </div>
+
+            <!-- Estado -->
+            <div class="col-md-3">
+              <label class="form-label">Estado <span class="text-danger">*</span></label>
+              <input type="text" class="form-control"
+                     name="Address_Region" maxlength="255" required>
+            </div>
+
+            <!-- Asunto -->
+            <div class="col-12">
+              <label class="form-label">
+                Asunto <span class="text-danger">*</span>
+              </label>
+              <input type="text" class="form-control"
+                     name="SingleLine" fieldType="1"
+                     maxlength="255" required>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="col-12">
+              <label class="form-label">
+                Mensaje <span class="text-danger">*</span>
+              </label>
+              <textarea class="form-control"
+                        name="MultiLine"
+                        maxlength="65535"
+                        rows="4"
+                        required></textarea>
+            </div>
+
+            <!-- Nota -->
+            <div class="col-12">
+              <small class="text-danger">* Campos obligatorios</small>
+            </div>
+
+            <!-- Botón -->
+            <div class="col-12 text-center mt-3">
+              <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill">
+                Enviar mensaje
+              </button>
+            </div>
+
+          </div>
         </form>
 
-				
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!--=====================================
@@ -285,6 +363,30 @@ FACEBOOK: https://www.facebook.com/themefisher
   <script src="plugins/google-map/gmap.js"></script>
   
   <script src="js/script.js"></script>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            fetch("https://forms.zohopublic.com/contactoiicca1/form/ContactUs/formperma/sDrZqTKpTuX_pdZ8WiBZB8Sbk1I-DScktjQg-8RdW2I/htmlRecords/submit", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Mensaje enviado correctamente ✅");
+                    form.reset();
+                } else {
+                    alert("Error al enviar el mensaje ❌");
+                }
+            })
+            .catch(error => {
+                alert("Error de conexión ❌");
+            });
+        });
+  </script>
 </body>
 
 </html>
