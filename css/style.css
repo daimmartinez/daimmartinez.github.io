@@ -750,6 +750,7 @@ button:focus,
 
 .cta-hire {
   background: #FAFAFA;
+  display: none;
 }
 
 .cta-hire p {
@@ -1708,6 +1709,10 @@ hr {
   }
 }
 
+.quotes {
+  display: none;
+}
+
 .quotes .quote-slider h2 {
   font-size: 50px;
 }
@@ -1719,6 +1724,7 @@ hr {
 
 .clients {
   padding: 50px 0;
+  display: none;
 }
 
 .clients h3 {
@@ -1732,6 +1738,9 @@ hr {
 
 .clients .client-slider img {
   max-width: 80%;
+}
+.investors{
+  display: none;
 }
 
 .investors .block {
