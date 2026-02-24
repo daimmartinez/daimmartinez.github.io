@@ -40,6 +40,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="plugins/aos/aos.css">
+  <script src="plugins/jquery/jquery.min.js"></script>
 
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -149,22 +150,30 @@ FACEBOOK: https://www.facebook.com/themefisher
 				<!-- Story Image Slider -->
 				<div class="about-slider">
 					<!-- Story Image -->
-					<div class="item">
-						<img class="w-100" src="images/about/calmecac-2.jpg" alt="slider-image">
+					<div class="item ">
+						<img class="w-100 whyCalcmecac" src="images/about/calmecac-2.jpg" alt="slider-image">
 					</div>
 					<!-- Story Image -->
-					<div class="item">
-						<img class="w-100" src="images/about/calmecac-1.jpg" alt="slider-image">
+					<div class="item ">
+						<img class="w-100 whyCalcmecac" src="images/about/calmecac-1.jpg" alt="slider-image">
 					</div>
 					<!-- Story Image -->
-					<div class="item">
-						<img class="w-100" src="images/about/calmecac-3.jpg" alt="slider-image">
+					<div class="item ">
+						<img class="w-100 whyCalcmecac" src="images/about/calmecac-3.jpg" alt="slider-image">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<script>
+$(window).on('load', function(){
+	var $imgs = $('.w-100');
+
+	$imgs.height($('.row').height()*5);
+});</script>
+
 <!--====  End of Our Story  ====-->
 
 <!--================================

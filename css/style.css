@@ -1696,6 +1696,12 @@ hr {
   padding: 20px;
 }
 
+.about .about-slider .item img{
+  border-radius: 20%;
+}
+
+
+
 .about .about-slider .owl-dots .owl-dot:hover span {
   background: #2e7eed;
 }
